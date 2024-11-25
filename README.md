@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# GitHub Stars Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[English](#english) | [中文](#中文)
 
-## Available Scripts
+## English
 
-In the project directory, you can run:
+A React web app for managing GitHub starred repositories with search, tagging and sorting features.
 
-### `npm start`
+### Features
+- 🔍 Search through all your starred repositories
+- 🏷️ Custom tagging system
+- 🗂️ Filter repositories by tags
+- 📝 Repository details with last update time
+- 📱 Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Live Demo
+Visit: https://mawendi0990.github.io/github-stars-manager
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+#### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- A GitHub account and personal access token
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Steps
 
-### `npm run build`
+1. Clone the repository
+```bash
+git clone https://github.com/mawendi0990/github-stars-manager.git
+cd github-stars-manager
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a GitHub token
+- Go to GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)
+- Generate new token
+- Select 'repo' scope
+- Copy the generated token
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Create environment file
+Create a `.env` file in the root directory:
+```
+REACT_APP_GITHUB_TOKEN=your_github_token_here
+```
 
-### `npm run eject`
+5. Start the development server
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app should now be running at `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Technologies Used
+- React.js
+- Tailwind CSS
+- GitHub REST API
+- Local Storage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 中文
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+一个用于管理 GitHub 星标仓库的 React 网页应用，具有搜索、标签和排序功能。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 功能特点
+- 🔍 搜索所有星标仓库
+- 🏷️ 自定义标签系统
+- 🗂️ 按标签筛选仓库
+- 📝 显示仓库详情和最后更新时间
+- 📱 响应式设计
 
-### Code Splitting
+### 在线演示
+访问：https://mawendi0990.github.io/github-stars-manager
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 安装说明
 
-### Analyzing the Bundle Size
+#### 环境要求
+- Node.js (v14 或更高版本)
+- npm 或 yarn
+- GitHub 账号和个人访问令牌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### 安装步骤
 
-### Making a Progressive Web App
+1. 克隆仓库
+```bash
+git clone https://github.com/mawendi0990/github-stars-manager.git
+cd github-stars-manager
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. 安装依赖
+```bash
+npm install
+```
 
-### Advanced Configuration
+3. 创建 GitHub 令牌
+- 访问 GitHub 设置 > 开发者设置 > 个人访问令牌 > 令牌（经典）
+- 生成新令牌
+- 选择 'repo' 权限
+- 复制生成的令牌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. 创建环境文件
+在根目录创建 `.env` 文件：
+```
+REACT_APP_GITHUB_TOKEN=你的_github_令牌
+```
 
-### Deployment
+5. 启动开发服务器
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+应用将在 `http://localhost:3000` 运行
 
-### `npm run build` fails to minify
+### 生产环境构建
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 使用的技术
+- React.js
+- Tailwind CSS
+- GitHub REST API
+- 本地存储
+
+### 使用说明
+1. 搜索：使用顶部搜索框搜索仓库名称、描述或标签
+2. 添加标签：在仓库卡片底部输入标签名称并按回车
+3. 筛选：点击顶部的标签进行筛选
+4. 查看详情：点击仓库名称跳转到 GitHub 页面
+
+### 注意事项
+- 标签数据保存在浏览器本地存储中
+- 需要有效的 GitHub 令牌才能访问数据
+- 首次加载可能需要一些时间，取决于星标仓库数量
+
+## License / 许可证
+MIT License
+
+## Acknowledgments / 致谢
+Built with GitHub REST API and Octokit
