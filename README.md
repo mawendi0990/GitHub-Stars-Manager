@@ -13,9 +13,6 @@ A React web app for managing GitHub starred repositories with search, tagging an
 - 📝 Repository details with last update time
 - 📱 Responsive design
 
-### Live Demo
-Visit: https://mawendi0990.github.io/github-stars-manager
-
 ### Installation
 
 #### Prerequisites
